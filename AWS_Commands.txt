@@ -1,0 +1,8 @@
+
+
+// Check the configured identity 
+aws sts get-caller-identity
+
+
+// get user information configured AWS Cli 
+aws iam get-user --profile profile
