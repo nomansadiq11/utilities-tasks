@@ -6,3 +6,7 @@ Get-ChildItem Env:
 
 #Importan comment 
 # do not use reserverd workd "path" as variable which causing issue
+
+
+# give sleep mode for sec 
+Start-Sleep -Seconds 2
