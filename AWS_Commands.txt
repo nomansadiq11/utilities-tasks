@@ -18,3 +18,8 @@ C:\sts.exe assume-role --serial-number arn:aws:iam::887076576579:mfa/noman.sadiq
 // session base login prod
 C:\sts.exe assume-role --serial-number arn:aws:iam::887076576579:mfa/noman.sadiq@osn.com --role-session-name noman.sadiq@osn.com --role-arn arn:aws:iam::889053467641:role/project-developer -s -u
 
+
+
+// aws login url for nsadiq
+https://328542013289.signin.aws.amazon.com/console
+nsadiq
