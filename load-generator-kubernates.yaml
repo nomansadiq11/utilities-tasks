@@ -1,0 +1,17 @@
+
+
+# refer link
+# https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/
+
+
+# first crate deployment 
+kubectl run php-apache --image=k8s.gcr.io/hpa-example --requests=cpu=200m --limits=cpu=500m --expose --port=80
+
+
+
+# login to load generator machine
+kubectl run -i --tty load-generator --image=busybox /bin/sh
+
+
+# run this infinite rule 
+while true; do wget -q -O- http://172.17.112.74:30860/; done
