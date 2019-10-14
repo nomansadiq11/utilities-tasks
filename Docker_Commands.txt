@@ -1,0 +1,16 @@
+
+
+// run docker to local machine 
+// to 3000 from port 80
+docker run -d -it 127.0.0.7:3000:80 image_name
+
+// get the docker container ip 
+docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' container_id or image_id
+
+
+// this comand use for go in container
+docker exec -it containerid bash 
+
+
+// remove all un used images and containers and also cache
+docker system prune -a

@@ -1,0 +1,39 @@
+kubectl delete -n csvreader services servicecsvreader
+
+kubectl delete -n csvreader deployments podscsvreader
+
+kubectl delete -n csvreader HorizontalPodAutoscaler autoscalingcsvreader
+
+
+
+kubectl create -f .\02_Service.yaml 
+kubectl create -f .\03_Deployment.yaml
+
+
+kubectl get nodes -o wide
+kubectl get svc -n csvreader
+
+
+kubectl create deployment nodejs --image=nomansadiq11/ubuntu-nginx-nodejs:latest
+
+kubectl expose deployment nodejs --type=LoadBalancer --port=8080
+
+
+
+
+kubectl create deployment nodejs --image=nomansadiq11/ubuntu-nginx-nodejs:latest
+
+kubectl expose deployment nodejs --type=LoadBalancer --port=8080
+
+
+http://127.0.0.1:59899/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/#/overview?namespace=csvreader
+
+kubectl expose -n csvreader deployment csvreader --type=LoadBalancer --port=80
+
+New-VMSwitch -Name forminikube -AllowManagement $True -NetAdapterName Wi-Fi
+
+minikube start —vm-driver=hyperv —hyperv-virtual-switch=forminikube
+
+docker pull jenkins/jenkins
+kubectl create deployment jenkins --image=jenkins/jenkins
+kubectl expose deployment jenkins --type=LoadBalancer --port=8080
