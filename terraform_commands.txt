@@ -1,0 +1,4 @@
+
+
+// generate grapch
+terraform graph | dot -Tsvg > graph.svg
