@@ -14,3 +14,7 @@ docker exec -it containerid bash
 
 // remove all un used images and containers and also cache
 docker system prune -a
+
+
+// run linx image as volume 
+docker run -it -d --name devtest -v vol_amazonlinux:/app amazonlinux:latest /bin/bash
