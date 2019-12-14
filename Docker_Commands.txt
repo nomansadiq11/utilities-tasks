@@ -16,5 +16,8 @@ docker exec -it containerid bash
 docker system prune -a
 
 
-// run linx image as volume 
+// run linx image as volume amazon linux
 docker run -it -d --name devtest -v vol_amazonlinux:/app amazonlinux:latest /bin/bash
+
+// run ubunto 
+docker run -it -d --name devubuntu -v vol_ubuntu:/vol_ubuntu ubuntu:latest /bin/bash
