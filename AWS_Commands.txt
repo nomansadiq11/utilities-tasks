@@ -15,7 +15,7 @@ https://s3-eu-west-1.amazonaws.com/gulf-dth-shared-service-toolbox/windows/sts.e
 C:\sts.exe assume-role --serial-number arn:aws:iam::887076576579:mfa/noman.sadiq@osn.com --role-session-name noman.sadiq@osn.com --role-arn arn:aws:iam::640139386696:role/project-developer -s -u
 
 
-// session base login prod
+// session base login dev
 C:\sts.exe assume-role --serial-number arn:aws:iam::887076576579:mfa/noman.sadiq@osn.com --role-session-name noman.sadiq@osn.com --role-arn arn:aws:iam::889053467641:role/project-developer -s -u
 
 
