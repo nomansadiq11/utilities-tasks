@@ -21,3 +21,8 @@ docker run -it -d --name devtest -v vol_amazonlinux:/app amazonlinux:latest /bin
 
 // run ubunto 
 docker run -it -d --name devubuntu -v vol_ubuntu:/vol_ubuntu ubuntu:latest /bin/bash
+
+
+// run docker image 
+
+docker run -it --name {image container name } {image name} /bin/bash
