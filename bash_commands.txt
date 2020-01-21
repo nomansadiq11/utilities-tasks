@@ -1,0 +1,6 @@
+check the dns latency 
+while true; do dig "elastic.spain.adevinta.com" | grep time; sleep 2; done
+
+
+tcp dump logs
+tcpdump -leni any -w capture.pcap
