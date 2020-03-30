@@ -35,3 +35,7 @@ docker container rm test
 docker run -it -d --name test ubuntu /bin/bash
 
 // Start Stop Container 
+
+
+// run container with persistence volumne
+docker run -it -d --name dev -v vol_amazonlinux:/app amazonlinux:latest /bin/bash
