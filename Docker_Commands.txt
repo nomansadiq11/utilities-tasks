@@ -26,3 +26,12 @@ docker run -it -d --name devubuntu -v vol_ubuntu:/vol_ubuntu ubuntu:latest /bin/
 // run docker image 
 
 docker run -it --name {image container name } {image name} /bin/bash
+
+
+// Start Stop Container 
+docker run -it -d --name test ubuntu /bin/bash
+docker container stop test
+docker container rm test
+docker run -it -d --name test ubuntu /bin/bash
+
+// Start Stop Container 
