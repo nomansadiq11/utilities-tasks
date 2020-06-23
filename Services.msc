@@ -1,0 +1,7 @@
+
+
+Get-Service 'MSSQL$NSADIQ' | Where {$_.status -eq 'Running'} |  Stop-Service;
+Get-Service 'MSSQLFDLauncher$NSADIQ' | Where {$_.status -eq 'Running'} |  Stop-Service
+Get-Service 'MsDtsServer110' | Where {$_.status -eq 'Running'} |  Stop-Service
+Get-Service 'ReportServer$NSADIQ' | Where {$_.status -eq 'Running'} |  Stop-Service
+Get-Service 'MSOLAP$NSADIQ' | Where {$_.status -eq 'Running'} |  Stop-Service
