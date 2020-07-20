@@ -1,0 +1,3 @@
+
+-- remove permission from guest accoutn
+netsh wlan delete filter permission=block ssid="Guest" networktype=infrastructure
